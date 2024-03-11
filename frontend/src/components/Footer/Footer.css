@@ -1,0 +1,54 @@
+/* Footer */
+.footer {
+  background-color: #FFFFFF;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 50px; /* Decreased footer height */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.github-img {
+  width: 70px; /* Decreased the width of the GitHub image */
+  height: 50px; /* Set height to make the image square */
+  margin-top: 0; /* Adjusted margin to align the image with text */
+  margin-left: 10px; /* Adjusted margin to provide space between text and image */
+  margin-bottom: -15px;
+}
+
+.copy-right-para {
+  background-color: #FFFFFF;
+  padding: 5px 10px;
+  text-align: center;
+  color: #000000;
+  font-size: 17px; /* Decreased font size */
+  margin: 0;
+  flex: 1;
+  margin-left: 10px; /* Adjusted margin to provide space between text and image */
+  line-height: 50px; /* Set line-height equal to image height for vertical alignment */
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 1024px) {
+  .footer {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .github-img {
+    width: 20px; /* Adjust the width for smaller screens */
+    height: 20px; /* Set height for smaller screens to maintain square aspect ratio */
+    margin-top: 0; /* Reset margin for smaller screens */
+  }
+
+  .copy-right-para {
+    margin-top: 0; /* Reset margin for smaller screens */
+    line-height: 20px; /* Set line-height equal to image height for vertical alignment in smaller screens */
+  }
+}

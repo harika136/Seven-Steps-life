@@ -1,0 +1,73 @@
+/* Updated Cards CSS */
+
+body {
+  background: url('https://th.bing.com/th?id=OIP.mJe1nTpW8Dg6wO3VvRLLpwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: url('https://th.bing.com/th?id=OIP.mJe1nTpW8Dg6wO3VvRLLpwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
+  background-color: #f8f8f8;
+  text-align: center;
+  margin-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:first-child {
+  flex-basis: calc(35% - 20px); /* Larger width for the first card */
+}
+
+.card:nth-child(n+2):nth-child(-n+5) {
+  flex-basis: calc(33.33% - 20px); /* Slightly smaller width for the next two cards */
+}
+
+.card:nth-child(n+6):nth-child(-n+7) {
+  flex-basis: calc(25% - 20px); /* Even smaller width for the next four cards */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-emphasis: left;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .card {
+    flex-basis: calc(100% - 20px);
+  }
+}

@@ -1,0 +1,36 @@
+/* Updated Dashboard CSS */
+body {
+    background: url('https://th.bing.com/th/id/OIP.a6zSIRnGe1p80KrkAQxGJQHaEo?rs=1&pid=ImgDetMain') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 100px;
+
+  }
+  
+  .step-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  

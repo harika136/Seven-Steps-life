@@ -1,0 +1,100 @@
+body {
+  background: url('https://wallpaperaccess.com/full/3926856.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  max-width: 600px;
+  border: 3px solid #000000;
+  box-shadow: 0 0 40px #000000;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  margin-top: 75px;
+}
+
+h5 {
+  color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  border-radius: 0; /* Set border-radius to 0 for rectangular shape */
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px #000000;
+}
+
+input {
+  width: auto;
+}
+
+select {
+  width: 40%;
+}
+
+textarea {
+  width: 50%;
+  resize: vertical;
+}
+
+div.form-group > div {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+span {
+  margin-left: 5px;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(87, 83, 155, 0.1);
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+input[type="radio"] + span,
+input[type="checkbox"] + span {
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 80%;
+  }
+}

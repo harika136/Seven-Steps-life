@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --mainColor: #ecf0f1;
+  --secondaryColor: #e74c3c;
+  --textColor: #000000;
+  --bgColor: #2c3e50;
+}
+
+body {
+  background: var(--bgColor);
+}
+
+header {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h4 {
+  color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 5px;
+}
+
+nav a {
+  margin: 0 1.5rem;
+  color: var(--textColor);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--secondaryColor);
+}
+
+header .nav-btn {
+  padding: 10px;
+  cursor: pointer;
+  background: var(--secondaryColor);
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  font-size: 1.5rem;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+header .nav-btn:hover {
+  background: darken(var(--secondaryColor), 10%);
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  margin-right: 1.5rem; /* Adjust the margin as needed */
+  padding: 12px; /* Increased padding for a better look */
+  border: none;
+  border-radius: 20px; /* Increased border-radius for a rounded look */
+  font-size: 16px;
+  background-color: #3498db; /* Subtle background color */
+  color: #333;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+    z-index: 999;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--textColor);
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
